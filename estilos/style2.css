@@ -1,0 +1,291 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#body {
+    background-image: url(../fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    overflow: hidden;
+}
+#body:before{
+    content: "";
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: linear-gradient(to left, #8942a8, #7b95f5);
+    opacity: 0.4;
+    z-index: -1;
+}
+.box-area {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 25px;
+    height: 25px;
+    background: rgba(255, 249, 255, 0.2);
+    animation: animate 20s linear infinite ;
+    bottom: -150px;
+}
+
+.box-area:nth-child(1){
+    left: 86%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+.box-area:nth-child(2){
+    left: 12%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 1.5s;
+    animation-duration: 10s;
+}
+.box-area:nth-child(3){
+    left: 70%;
+    width: 100px;
+    height: 100px;
+    animation-delay: 5.5s;
+    
+}
+.box-area:nth-child(4){
+    left: 70%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 15s;
+    
+}
+.box-area:nth-child(5){
+    left: 65%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 0s;
+}
+.box-area:nth-child(6){
+    left: 15%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3.5s;
+}
+.box-area:nth-child(7){
+    left: 33%;
+    width: 120px;
+    height: 120px;
+    animation-delay: 5.5s;
+}
+.box-area:nth-child(8){
+    left: 27%;
+    width: 130px;
+    height: 130px;
+    animation-delay: 0s;
+}
+@keyframes animate {
+    0%{
+        bottom: 0;
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    30%{
+
+    }
+    100%{
+        bottom: 100vh;
+        transform: translateY(-800px) rotate(360deg);
+        opacity: 0;
+    }
+    
+}
+@font-face {
+    font-family: fuente_titulo;
+    src: url(fuente.ttf);
+}
+
+#titulo {
+    font-family: fuente_titulo;
+    color: rgb(255, 255, 255);
+    font-size: 80px;
+}
+
+#btn_empezar {
+    width: 180px;
+    height: 70px;
+    font-size: 25px;
+    font-weight: bolder;
+    position: absolute;
+    margin-top: 220px;
+    margin-left: 40%;
+}
+
+#nombre_usuario {
+    width: 100%;
+    height: 70px;
+    font-size: 40px;
+}
+
+#nombre_usuario,
+#select_nivel {
+    width: 100%;
+    height: 70px;
+    font-size: 40px;
+}
+
+#select_nivel {
+    cursor: pointer;
+}
+
+#btn_guardar_nombre {
+    width: 100%;
+    height: 70px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+#row_nombre {
+    margin-top: 200px;
+    margin-bottom: 150px;
+    height: 50%;
+    width: 80%;
+    margin-left: 10%;
+}
+
+#menu_niveles {
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+#btn_test,
+#btn_elegir_nivel,
+#btn_ayuda,
+#btn_salir {
+    width: 200px;
+}
+
+#seleccionar_nivel {
+    margin: 100px;
+}
+
+#regresar {
+    margin-bottom: 150px;
+    margin: 0 44%
+}
+
+.carousel-item {
+    position: static;
+    margin-left: 20%;
+}
+
+.colu{
+    animation: titulo 2.5s linear infinite ;
+}
+
+.burbuja{
+    border-radius: 50%;
+    background: rgb(159, 138, 255);
+    opacity: .3;
+
+    position: absolute;
+    bottom: -150px;
+
+
+    animation: burbujas 3s linear infinite ;
+}
+
+.burbuja:nth-child(1){
+    width: 80px;
+    height: 80px;
+    left: 5%;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+
+.burbuja:nth-child(2){
+    width: 100px;
+    height: 100px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 6s;
+}
+.burbuja:nth-child(3){
+    width: 20px;
+    height: 20px;
+    left: 15%;
+    animation-duration: 1.5s;
+    animation-delay: 7s;
+}
+.burbuja:nth-child(4){
+    width: 50px;
+    height: 50px;
+    left: 90%;
+    animation-duration: 6s;
+    animation-delay: 3s;
+}
+.burbuja:nth-child(5){
+    width: 70px;
+    height: 70px;
+    left: 65%;
+    animation-duration: 3s;
+    animation-delay: 5s;
+}
+.burbuja:nth-child(6){
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 8s;
+}
+.burbuja:nth-child(7){
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 11s;
+}
+.burbuja:nth-child(8){
+    width: 100px;
+    height: 100px;
+    left: 52%;
+    animation-duration: 5s;
+    animation-delay: 5s;
+}
+.burbuja:nth-child(9){
+    width: 65px;
+    height: 65px;
+    left: 51%;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+
+
+@keyframes burbujas {
+    0%{
+        bottom:0;
+        opacity: 0;
+    }
+    30%{
+        transform: translateX(30px);
+    }
+    50%{
+        opacity: .4;
+    }
+    100%{
+        bottom: 100vh;
+        opacity: 0;
+    }
+}
+
+@keyframes titulo {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
